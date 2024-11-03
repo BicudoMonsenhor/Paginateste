@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submenu Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="submenu">
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">SEO Optimization</a></li>
+                    <li><a href="#">Content Creation</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Welcome to Our Website!</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="file" />
+            <button type="button" onclick="uploadFile()">Upload</button>
+        </form>
+        <p id="status"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
